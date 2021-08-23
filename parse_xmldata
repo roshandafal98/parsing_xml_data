@@ -1,0 +1,13 @@
+pipeline {
+    agent any
+
+    stages {
+        
+        stage('Build'){
+            steps{
+              bat 'python evaluation_xml.py'
+            }
+            
+        }
+    }
+}
